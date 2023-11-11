@@ -1,68 +1,54 @@
-# Specifies intentionally untracked files to ignore when using Git
-# http://git-scm.com/docs/gitignore
+# Outputs
+bazel-*
+test-project-host-*
+dist/
+dist-schema/
 
-*~
-*.sw[mnpcod]
-.tmp
-*.tmp
-*.tmp.*
-UserInterfaceState.xcuserstate
-$RECYCLE.BIN/
+# IDEs
+jsconfig.json
 
-*.log
-log.txt
+# Intellij IDEA/WebStorm
+# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+.idea/inspectionProfiles/
+.idea/**/compiler.xml
+.idea/**/encodings.xml
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
 
+# Also ignore code styles because .editorconfig is used instead.
+.idea/codeStyles/
 
-/.sourcemaps
-/.versions
-/coverage
-
-# Ionic
-/.ionic
-/www
-/platforms
-/plugins
-
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
-
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
-
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-project
-*.sublime-workspace
-
-# Visual Studio Code
-.vscode/*
+# VSCode
+# https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
+**/*.code-workspace
 
+# Typings file.
+typings/
 
-# Miscellaneous
-/.angular
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+# Misc
+.path/
+.angular/
+coverage/
+node_modules/
+tmp/
+npm-debug.log*
+yarn-error.log*
+.ng_pkg_build/
+.ng-dev.log
+.ng-dev.err*.log
+.ng-dev.user*
+.husky/_
+.bazelrc.user
+.eslintcache
 
-# System files
+# Mac OSX Finder files.
+**/.DS_Store
 .DS_Store
-Thumbs.db
